@@ -45,7 +45,7 @@ function Reels(props: ReelsProps): JSX.Element {
         index,
       })}
       pagingEnabled
-      decelerationRate={0.9}
+      decelerationRate={0.99}
       onViewableItemsChanged={onViewRef.current}
       viewabilityConfig={viewConfigRef.current}
     />

@@ -1,6 +1,9 @@
-import React from "react";
+import React, {
+  useEffect,
+} from "react";
 import { StyleSheet, StatusBar, View } from "react-native";
-import Reels from "expo-instagram-reels";
+import Reels from "./src/Reels/components/Reels";
+import { Audio } from "expo-av";
 
 import videos from "./utils/videos";
 
@@ -12,6 +15,8 @@ export default function App() {
     </View>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {

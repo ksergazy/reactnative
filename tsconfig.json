@@ -2,7 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["es2017", "es7", "es6", "dom"],
+    "lib": [
+      "es2017",
+      "es7",
+      "es6",
+      "dom"
+    ],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -11,5 +16,9 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "src"]
+  "exclude": [
+    "node_modules",
+    "src"
+  ],
+  "extends": "expo/tsconfig.base"
 }
