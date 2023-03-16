@@ -28,14 +28,6 @@ function Reels(props: ReelsProps): JSX.Element {
           {...item}
           index={index}
           ViewableItem={ViewableItem}
-          onFinishPlaying={(index) => {
-            if (index !== videos.length - 1) {
-              // @ts-ignore: Object is possibly 'null'.
-              FlatlistRef.current.scrollToIndex({
-                index: index + 1,
-              });
-            }
-          }}
           {...otherProps}
         />
       )}
@@ -45,6 +37,7 @@ function Reels(props: ReelsProps): JSX.Element {
         index,
       })}
       pagingEnabled
+      windowSize={1}
       decelerationRate={0.99}
       onViewableItemsChanged={onViewRef.current}
       viewabilityConfig={viewConfigRef.current}
